@@ -1,0 +1,18 @@
+{
+  "id": "dev.kingfish.DoubleClickVC",
+  "name": "Double Click to VC",
+  "description": "Double click to join VC",
+  "author": {
+    "name": "King Fish",
+    "discordID": "499400512559382538",
+    "github": "12944qwerty"
+  },
+  "version": "1.0.0",
+  "updater": {
+    "type": "github",
+    "id": "qwerty-mods/double-click-vc"
+  },
+  "license": "MIT",
+  "type": "replugged-plugin",
+  "renderer": "src/index.ts"
+}
