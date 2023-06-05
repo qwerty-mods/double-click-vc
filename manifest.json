@@ -7,10 +7,10 @@
     "discordID": "499400512559382538",
     "github": "12944qwerty"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "updater": {
-    "type": "github",
-    "id": "qwerty-mods/double-click-vc"
+    "type": "store",
+    "id": "dev.kingfish.DoubleClickVC"
   },
   "license": "MIT",
   "type": "replugged-plugin",
