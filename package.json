@@ -1,6 +1,6 @@
 {
   "name": "double-click-vc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Double click to join VC",
   "engines": {
     "node": ">=18.0.0",
@@ -32,7 +32,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-react": "^7.32.2",
     "prettier": "^2.8.8",
-    "replugged": "^4.2.6",
+    "replugged": "^4.5.1",
     "type-fest": "^3.10.0",
     "typescript": "^5.0.4"
   }
