@@ -2,17 +2,19 @@
   "id": "dev.kingfish.DoubleClickVC",
   "name": "Double Click to VC",
   "description": "Double click to join VC",
-  "author": [{
-    "name": "King Fish",
-    "discordID": "499400512559382538",
-    "github": "12944qwerty"
-  },
-  {
-    "name": "Ahlawat",
-    "discordID": "1025214794766221384",
-    "github": "Tharki-God"
-  }],
-  "version": "1.0.2",
+  "author": [
+    {
+      "name": "King Fish",
+      "discordID": "499400512559382538",
+      "github": "12944qwerty"
+    },
+    {
+      "name": "Ahlawat",
+      "discordID": "1025214794766221384",
+      "github": "Tharki-God"
+    }
+  ],
+  "version": "1.0.3",
   "updater": {
     "type": "store",
     "id": "dev.kingfish.DoubleClickVC"
@@ -22,5 +24,5 @@
   "renderer": "src/index.ts",
   "plaintextPatches": "src/plaintextPatches.ts",
   "source": "https://github.com/qwerty-mods/double-click-vc",
-  "image": "https://cdn.discordapp.com/attachments/1105304879137824798/1105304879414653039/doubleclickvc.gif"  
+  "image": "https://cdn.discordapp.com/attachments/1105304879137824798/1105304879414653039/doubleclickvc.gif"
 }
