@@ -7,7 +7,7 @@ export default (): void => {
     "react",
     ([{ channelId }]: [{ channelId?: string }], res: React.ReactElement & Types.Tree) => {
       const channel = channels.getChannel(channelId);
-      if (channel?.isVocal()) {
+      if (channel?.isGuildStageVoice() || channel?.isGuildVoice()) {
         res.props.onDoubleClick = res.props.onClick;
         res.props.onClick = () => null;
       }
