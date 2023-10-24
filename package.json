@@ -1,6 +1,6 @@
 {
   "name": "double-click-vc",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Double click to join VC",
   "engines": {
     "node": ">=18.0.0",
