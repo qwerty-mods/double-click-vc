@@ -1,14 +1,7 @@
 export { types as DefaultTypes } from "replugged";
 import { types as DefaultTypes } from "replugged";
 export { Channel } from "discord-types/general";
-export { Tree } from "replugged/util";
-export interface GenericModule extends Record<string, DefaultTypes.AnyFunction> {}
-export interface GenericExport {
-  exports: GenericModule;
-  id: number;
-  loaded: boolean;
-}
-export interface genericObjectExport extends Record<string | number, DefaultTypes.AnyFunction> {}
+export { Tree } from "replugged/dist/renderer/util";
 export interface ChannelButtonClasses {
   channelEmoji: string;
   channelEmojiLeftOfIcon: string;
@@ -40,5 +33,13 @@ export interface ChannelButtonClasses {
   unread: string;
   unreadRelevant: string;
   wrapper: string;
+}
+export interface ChannelItem {
+  default: DefaultTypes.AnyFunction;
+  ChannelItemIcon: DefaultTypes.AnyFunction;
+}
+export interface Interactive {
+  Icon: DefaultTypes.AnyFunction;
+  default: { Icon: DefaultTypes.AnyFunction } & DefaultTypes.AnyFunction;
 }
 export * as default from "./types";

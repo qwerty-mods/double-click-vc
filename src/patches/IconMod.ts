@@ -1,14 +1,9 @@
-import { webpack } from "replugged";
 import { PluginInjector } from "../index";
-import { IconMod } from "../lib/requiredModules";
+import { Interactive } from "../lib/requiredModules";
 import Types from "../types";
 export default (): void => {
-  const IconModFunction = webpack.getFunctionBySource<{ Icon: Types.DefaultTypes.AnyFunction }>(
-    IconMod,
-    ".childrenBottom",
-  )!;
   PluginInjector.after(
-    IconModFunction,
+    Interactive.default,
     "Icon",
     (
       [{ onDoubleClick }]: [{ onDoubleClick: Types.DefaultTypes.AnyFunction }],
