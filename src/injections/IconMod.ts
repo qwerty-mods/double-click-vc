@@ -13,7 +13,7 @@ export default (): void => {
       if (!onDoubleClick) return res;
       const originalChildren = res.props.children;
       res.props.children = (...args) => {
-        const res = originalChildren.apply(null, ...args);
+        const res = originalChildren(...args);
         res.props.onDoubleClick = onDoubleClick;
         res.props.onClick ??= () => null;
         return res;
