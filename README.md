@@ -65,3 +65,6 @@ There is support server for all the plugins. You can join it here:
 # Who is the author of these plugins?
 
 [![Discord Presence](https://lanyard.cnrad.dev/api/1121961711080050780?hideDiscrim=true&idleMessage=Leave%20the%20kid%20alone...)](https://discordapp.com/users/1121961711080050780)
+
+<a href="https://github.com/12944qwerty"><span style="text-align: center; padding: 50px;"><img src="https://avatars.githubusercontent.com/u/116000905?s=48&v=4" width="100px;" alt="12944qwerty" style="border-radius: 50%"/><br/><sub><b>12944qwerty</b></sub></span>
+</a>
