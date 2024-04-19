@@ -9,9 +9,9 @@
       "github": "12944qwerty"
     },
     {
-      "name": "Ahlawat",
+      "name": "Nanakusa",
       "discordID": "1121961711080050780",
-      "github": "TharkiDev"
+      "github": "YofukashiNo"
     }
   ],
   "version": "1.1.2",
@@ -24,5 +24,5 @@
   "renderer": "src/index.ts",
   "plaintextPatches": "src/plaintextPatches.ts",
   "source": "https://github.com/qwerty-mods/double-click-vc",
-  "image": "https://cdn.discordapp.com/attachments/1105304879137824798/1105304879414653039/doubleclickvc.gif"
+  "image": "https://i.imgur.com/8iaQzKZ.gif"
 }

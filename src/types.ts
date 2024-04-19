@@ -42,4 +42,10 @@ export interface Interactive {
   Icon: DefaultTypes.AnyFunction;
   default: { Icon: DefaultTypes.AnyFunction } & DefaultTypes.AnyFunction;
 }
+export interface Modules {
+  loadModules?: () => Promise<void>;
+  ChannelItem?: ChannelItem;
+  ChannelButtonClasses?: ChannelButtonClasses;
+  Interactive?: Interactive;
+}
 export * as default from "./types";

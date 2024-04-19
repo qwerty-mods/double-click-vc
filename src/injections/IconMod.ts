@@ -1,7 +1,8 @@
 import { PluginInjector } from "../index";
-import { Interactive } from "../lib/requiredModules";
+import Modules from "../lib/requiredModules";
 import Types from "../types";
 export default (): void => {
+  const { Interactive } = Modules;
   PluginInjector.after(
     Interactive.default,
     "Icon",
@@ -9,11 +10,14 @@ export default (): void => {
       [{ onDoubleClick }]: [{ onDoubleClick: Types.DefaultTypes.AnyFunction }],
       res: React.ReactElement,
     ) => {
-      PluginInjector.after(res.props, "children", (_args, res: React.ReactElement) => {
+      if (!onDoubleClick) return res;
+      const originalChildren = res.props.children;
+      res.props.children = (...args) => {
+        const res = originalChildren.apply(null, ...args);
         res.props.onDoubleClick = onDoubleClick;
         res.props.onClick ??= () => null;
         return res;
-      });
+      };
       return res;
     },
   );
