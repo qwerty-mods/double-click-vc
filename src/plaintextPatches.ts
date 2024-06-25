@@ -1,4 +1,4 @@
-import * as Types from "./types";
+import Types from "./types";
 export default [
   {
     find: ".renderVoiceCallButton",

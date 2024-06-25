@@ -1,10 +1,16 @@
+import { webpack } from "replugged";
 import { PluginInjector } from "../index";
 import Modules from "../lib/requiredModules";
 import Types from "../types";
 export default (): void => {
   const { Interactive } = Modules;
+  const InteractiveDefault = webpack.getExportsForProps<{ Icon: Types.DefaultTypes.AnyFunction }>(
+    Interactive,
+    ["Icon"],
+  );
+
   PluginInjector.after(
-    Interactive.default,
+    InteractiveDefault,
     "Icon",
     (
       [{ onDoubleClick }]: [{ onDoubleClick: Types.DefaultTypes.AnyFunction }],
