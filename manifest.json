@@ -14,7 +14,7 @@
       "github": "YofukashiNo"
     }
   ],
-  "version": "1.1.4",
+  "version": "1.1.5",
   "updater": {
     "type": "store",
     "id": "dev.kingfish.DoubleClickVC"
