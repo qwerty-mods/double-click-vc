@@ -21,7 +21,7 @@ Modules.loadModules = async (): Promise<void> => {
     });
 
   Modules.Interactive = await webpack
-    .waitForModule<Types.GenericModule>(webpack.filters.bySource(/\.Title=.=>/), {
+    .waitForModule<Types.GenericModule>(webpack.filters.bySource("BaseHeaderBar.Divider"), {
       timeout: 10000,
     })
     .catch(() => {
