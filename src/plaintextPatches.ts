@@ -8,7 +8,7 @@ export default [
         replace: "onClick:()=>null,onDoubleClick:this.handleVoiceClick",
       },
       {
-        match: /(\.Messages\.START_VIDEO_CALL.{100,150})onClick:/,
+        match: /(this\.handleBrowserNotSupported.{50,75})onClick:/,
         replace: (_orig: string, prefix: string) => `${prefix}onClick:()=>null,onDoubleClick:`,
       },
     ],
