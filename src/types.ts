@@ -1,9 +1,10 @@
 import { types } from "replugged";
 import type util from "replugged/util";
-
+import GeneralDiscordTypes from "discord-types/general";
 export namespace Types {
   export import DefaultTypes = types;
   export type Tree = util.Tree;
+  export type Channel = GeneralDiscordTypes.Channel;
   export type GenericModule = Record<string, DefaultTypes.AnyFunction> & {
     default: DefaultTypes.AnyFunction;
   };

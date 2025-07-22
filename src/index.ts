@@ -10,3 +10,5 @@ export const start = (): void => {
 export const stop = (): void => {
   PluginInjector.uninjectAll();
 };
+
+export { _handleClick } from "./plaintextFunctions";

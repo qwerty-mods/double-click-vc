@@ -13,4 +13,24 @@ export default [
       },
     ],
   },
+  {
+    find: ".Masks.HEADER_BAR_BADGE_TOP",
+    replacements: [
+      {
+        match: /onClick:(\w+\?void 0:)\w+,/,
+        replace: (prefix, condition: string) =>
+          `${prefix}onDoubleClick:${condition}arguments[0]?.onDoubleClick,`,
+      },
+    ],
+  },
+  {
+    find: ".iconContainerWithGuildIcon",
+    replacements: [
+      {
+        match: ".link,onClick:",
+        replace: () =>
+          `.link,onClick:()=>replugged?.plugins?.getExports('dev.kingfish.DoubleClickVC')?._handleClick(arguments[0]),onDoubleClick:`,
+      },
+    ],
+  },
 ] as Types.DefaultTypes.PlaintextPatch[];

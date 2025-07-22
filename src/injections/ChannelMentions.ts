@@ -9,7 +9,10 @@ export default (): void => {
       const channel = UltimateChannelStore.getChannel(channelId);
       if (channel?.isGuildStageVoice() || channel?.isGuildVoice()) {
         res.props.onDoubleClick = res.props.onClick;
-        res.props.onClick = () => null;
+        res.props.onClick = () => {
+          if (UltimateChannelStore.getVoiceChannelId() !== channelId) return;
+          res.props.onDoubleClick();
+        };
       }
       return res;
     },
